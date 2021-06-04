@@ -1,12 +1,13 @@
 <template>
     <div id="back-img">
         <div>
-            <b-form-select v-model="selectedState" :options="states" id="select1">
+            <b-form-select v-model="selectedState" :options="states" id="select1" >
             </b-form-select>
             <b-form-select v-model="selectedDistrict" :options="districts"
                             :disabled="selectedState==''" id="select2">
             </b-form-select>
-            <b-button size="sm" class="my-2 my-sm-0" type="submit" @click="search()">search</b-button>
+            <b-button size="sm" class="my-2 my-sm-0" type="submit" @click="search()">
+            search</b-button>
         </div>
 
     </div>
@@ -72,7 +73,7 @@ export default {
 </script>
 <style>
 select#select1{
-    width:200px !important;
+    width:232px !important;
     margin: 350px 5px 350px 500px !important;
 }
 select#select2{
